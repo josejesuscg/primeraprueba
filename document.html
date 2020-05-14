@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <script type="text/javascript">
+    function aleatorio ()
+    {
+       var numeroaleatorio = Math.floor(Math.random() * 3);
+       return numeroaleatorio;
+    };
+
+    var opciones = ["Piedra", "Papel", "Tijera"];
+    var opcioncpu = opciones[aleatorio()];
+    var opcionusuario = prompt("Escoge una opcion\n"
+    + "Piedra = 0\n"
+    + "Papel = 1\n"
+    + "Tijera = 2");
+
+    alert("Usted eligio " + opciones[opcionusuario]);
+    alert("CPU elegio " + opcioncpu);
+
+    if ( opcionusuario == 0)
+    {
+        if (opcioncpu == 0)
+        {
+            alert("Empataste")
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
